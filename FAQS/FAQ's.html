@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Frequently Asked Questions</title>
+
+		<link rel="stylesheet" href="FAQs.css">
+		<link rel="stylesheet" href="../VueForm.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="../style.css">
+
+		<!-- jQuery UI style sheet -->
+		<link rel="stylesheet" href="jquery-ui.min.css">
+		<!-- jQuery library -->
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<!-- jQuery call to the accordion() method. -->
+		<script>
+			$(document).ready(function() {
+				$("#accordion").accordion({
+					event : "click",
+					collapsible : true,
+					active : false
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<div id="header">
+			<vue-header></vue-header>
+		</div>
+
+		<h1><b>FAQs</b></h1>
+
+		<div id="faqsContainer">
+			<div id="accordion">
+				<h3><a href="#">Forgot my password</a></h3>
+				<div>
+					<p>
+						If you forgot your password. You can reset it <a href="https://www.thenuttybuddies.com">here</a>.
+					</p>
+				</div>
+				<h3><a href="#">How long will my subscription last?</a></h3>
+				<div>
+					<p>
+						We have both monthly and yearly plans to choose from.
+					</p>
+				</div>
+				<h3><a href="#">Cancel/Renew My Memebrship</a></h3>
+				<div>
+					<p>
+						You can cancel your membership at any time. Just go to your account - renew/cancel membership and follow the directions listed there.
+					</p>
+				</div>
+			</div>
+
+			<img src = "images/questionMan.png" style="float:right"  width="300" height="500">
+		</div>
+		<div id="footer">
+			<vue-footer></vue-footer>
+
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+		<script src= "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src= "../VueHeader.js"></script>
+		<script src= "../VueFooter.js"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+<title>Recipes</title>	
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="VueForm.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body id = "recipeBody">
+	
+ <div id="header">
+ 	<div class="container-fluid">
+	<vue-header></vue-header>
+	</div>
+
+</div>
+
+<div id="app">
+	<div class="container-fluid">
+  	<recipe-form @recipe-submitted="addRecipe"></recipe-form>
+
+	<div class = "recipes">
+		<h2>Recipes</h2>
+      <h4 v-if="!recipes.length">There are no recipes yet.</h4>
+      <ul v-else>
+      	 <h4>Total Recipes: {{count}}</h4>
+         <li v-for="(recipe, index) in recipes" :key="index">
+         <h5>Recipe for: {{recipe.name }}</h5>
+         <p>Directions: {{recipe.directions }}</p>
+         <p>Ingredients: {{recipe.ingredients }}</p>
+         <p>Submitted by: {{recipe.firstName}} {{recipe.lastName}}</p>
+         </li>
+      </ul>
+	</div>
+         
+ </div>
+  </div>
+
+ <footer id="footer">
+	<vue-footer></vue-footer>
+</footer>
+
+</div>
+  	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src= "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src= "VueForm.js"></script>
+	<script src= "VueHeader.js"></script>
+	<script src= "VueFooter.js"></script>
+
+</body>
+</html

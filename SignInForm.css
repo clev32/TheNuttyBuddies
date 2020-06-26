@@ -1,0 +1,42 @@
+
+.sign-in-form {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  display: inline-block;
+  border: solid;   
+  float:left;
+  margin-left: 600px;
+}
+
+
+.sign-in-form input[type=text], .sign-in-form input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.sign-in-form input[type=text]:focus, .sign-in-form input[type=password]:focus {
+  background-color: #ddd;
+  outline: none; 
+}
+
+
+.sign-in-form .btn {
+  background-color:#007FFF;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.sign-in-form .btn:hover, .open-button:hover {
+  opacity: 1;
+}
