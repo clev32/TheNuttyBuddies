@@ -20,13 +20,13 @@ Vue.component('vue-footer', {
         <h5 class="text-uppercase">Help Center</h5>
 		<ul class="list-unstyled">
           <li>
-             <a href="/FinalProject/FAQS/FAQ's.html">FAQ's</a>
+             <a href="/FAQS/FAQ's.html">FAQ's</a>
           </li>
           <li>
-            <a href="/FinalProject/FAQS/FAQ's.html">Forgot My Password</a>
+            <a href="/FAQS/FAQ's.html">Forgot My Password</a>
           </li>
           <li>
-            <a href="/FinalProject/SignUpForm.html">Register</a>
+            <a href="/SignUpForm.html">Register</a>
           </li>
         </ul>
       </div>
