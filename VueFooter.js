@@ -51,7 +51,7 @@ Vue.component('vue-footer', {
     </div>
   </div>
   <div class="footer-copyright text-center py-3">&copy; 2020 Copyright:
-    <a href="https://www.thenuttybuddies.com"> www.thenuttybuddies.com</a>
+    <a href="thenuttybuddies.com"> www.thenuttybuddies.com</a>
   </div>
 </div>
 

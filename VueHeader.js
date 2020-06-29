@@ -23,9 +23,9 @@ Vue.component('vue-header', {
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="/recipe.html">All recipes</a>
-          <a class="dropdown-item" href="https://www.thenuttybuddies.com/">Mains</a>
-          <a class="dropdown-item" href="https://www.thenuttybuddies.com/">Salads</a>
-          <a class="dropdown-item" href="https://www.thenuttybuddies.com/">Desserts</a>
+          <a class="dropdown-item" href="thenuttybuddies.com/">Mains</a>
+          <a class="dropdown-item" href="thenuttybuddies.com/">Salads</a>
+          <a class="dropdown-item" href="thenuttybuddies.com/">Desserts</a>
         </div>
       </li>
     </ul>
@@ -45,10 +45,10 @@ Vue.component('vue-header', {
 `,
 methods:{
 Register:function(){
-	   window.open("/FinalProject/SignUpForm.html");
+	   window.open("/SignUpForm.html");
 },
 SignUp: function(){
-    window.open("/FinalProject/SignInForm.html");
+    window.open("/SignInForm.html");
 }
 }
 
